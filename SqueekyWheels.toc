@@ -4,7 +4,7 @@
 ## X-Category: Buffs
 
 ## Author: Alec Denholm
-## Version: 0.1
+## Version: 0.2
 
 ## SavedVariablesPerCharacter: squeekyWheelsWatchList
 
