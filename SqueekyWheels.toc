@@ -1,0 +1,15 @@
+## Interface: 80000
+## Title: Squeeky Wheels
+## Notes: Prompts you to re-cast expired buffs. The squeeky wheel gets the oil!
+## X-Category: Buffs
+
+## Author: Alec Denholm
+## Version: 0.1
+
+## SavedVariablesPerCharacter: squeekyWheelsWatchList
+
+startup.lua
+colour-printer.lua
+buff-auditor.lua
+main.lua
+commands.lua
