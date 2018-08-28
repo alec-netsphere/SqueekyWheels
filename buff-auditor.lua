@@ -2,13 +2,12 @@ local buffs = {}
 local expected = 1
 local actual = 0
 
-local addToBuffs = function(name, rank, icon, count, debuffType, duration, expirationTime,         unitCaster, isStealable, shouldConsolidate, spellId)
+local addToBuffs = function(name, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId)
     if not name then
         return false
     end
     
     buffs[name] = {
-        rank = rank,
         icon = icon,
         count = count,
         debuffType = debuffType,

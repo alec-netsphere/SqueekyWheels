@@ -1,5 +1,5 @@
-SLASH_SQUEEK_EXPLAIN1 = "/squeek"
-SlashCmdList["SQUEEK_EXPLAIN"] = function(self)
+SLASH_SQUEEK_EXPLAIN1 = "/squeekywheels"
+SlashCmdList["SQUEEK_EXPLAIN"] = function()
     print("SqueekyWheels commands list:")
     print()
     print("/squeek {Buff Name}")
@@ -10,14 +10,16 @@ SlashCmdList["SQUEEK_EXPLAIN"] = function(self)
 end
 
 SLASH_SQUEEK_ADD_TO_WATCH_LIST1 = "/squeek"
-SlashCmdList["SQUEEK_ADD_TO_WATCH_LIST"] = function(self, buffName)
-    table.insert(squeekyWheelsWatchList, buffName)
+SlashCmdList["SQUEEK_ADD_TO_WATCH_LIST"] = function(buffName)
+	if buffName then
+		table.insert(squeekyWheelsWatchList, buffName)
     
-    print("Added '"..buffName.."' to SqueekyWheels watch list.")
+		print("Added "..GetSpellLink(buffName).." to SqueekyWheels watch list.")
+	end
 end
 
 SLASH_SQUEEK_RESET_WATCH_LIST1 = "/oil"
-SlashCmdList["SQUEEK_RESET_WATCH_LIST"] = function(self)
+SlashCmdList["SQUEEK_RESET_WATCH_LIST"] = function()
     squeekyWheelsWatchList = {}
     
     print("SqueekyWheels watch list has been emptied.")
